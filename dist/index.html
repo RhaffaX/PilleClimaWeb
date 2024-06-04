@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PAPI PILLE EL CLIMA </title>
+        
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "./node_modules/three/build/three.module.js"
+              }
+            }
+        </script>
+            
+        <link rel="stylesheet" href="/dist/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <canvas id="myCanvas"></canvas>
+            <h1 id="myHeader">PILLE CLIMA</h1>  
+        </div>
+        
+        <script src="/dist/scrip.js"></script>
+
+        <div id="weather-container">
+            <input type="text" id="city" placeholder="Enter city">
+            <button onclick="getWeather()">Search</button>
+    
+            <img id="weather-icon" alt="Weather Icon">
+    
+            <div id="temp-div"></div>
+    
+            <div id="weather-info"></div>
+    
+            <div id="hourly-forecast"></div>
+        </div>
+        <script type="module" src="/dist/main.js"></script>
+    </body>
+</html>
